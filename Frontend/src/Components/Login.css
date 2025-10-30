@@ -1,0 +1,186 @@
+/* Modal Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  border-radius: 20px;
+  width: 900px;
+  max-width: 95%;
+  padding: 20px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-left {
+  width: 50%;
+}
+
+.login-logo h2 {
+  color: #0d2f81;
+}
+
+.login-logo span {
+  color: #00a99d;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 32px;
+  color: #222;
+}
+
+.login-subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #888;
+  cursor: pointer;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.forgot-link {
+  color: #f47b7b;
+  text-decoration: none;
+}
+
+.login-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.signup-text {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #f47b7b;
+  text-decoration: none;
+}
+
+.or-divider {
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+  margin: 15px 0;
+  position: relative;
+}
+
+.or-divider span::before,
+.or-divider span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: #ddd;
+}
+
+.or-divider span::before {
+  left: 0;
+}
+.or-divider span::after {
+  right: 0;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-right img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}

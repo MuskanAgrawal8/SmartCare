@@ -1,0 +1,98 @@
+.why-choose-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #f9fbfc;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.why-left {
+  flex: 1;
+}
+
+.subtitle {
+  color: #0077e6;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.why-left h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1b1b1b;
+  margin: 15px 0 40px;
+  line-height: 1.2;
+}
+
+.why-points {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.point {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.number {
+    margin-top: 10px;
+  background: none;
+  border: 2px solid #00a99d;
+  color: #00a99d;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h3 {
+  font-size: 15px;
+  color: #222;
+  margin-bottom: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  
+}
+
+/* Right Side */
+.why-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.doctor-img {
+    margin-top: 80px;
+    width: 600px;
+}
+@media (max-width: 992px) {
+  .why-choose-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-right {
+    margin-top: 40px;
+  }
+
+  .image-container {
+    width: 280px;
+    height: 320px;
+  }
+}

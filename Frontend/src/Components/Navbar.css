@@ -1,0 +1,44 @@
+
+
+/* Bottom menu bar */
+.navbar-menu {
+  background-color: #00a99d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  margin-top: 10px;
+}
+
+/* Navigation items */
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu ul li {
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu ul li:hover {
+  color: #dff;
+}
+
+/* Auth buttons on right (login/register) */
+.auth-buttons .btn {
+  background-color: #0066ff;
+  color: white;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.auth-buttons .btn:hover {
+  opacity: 0.9;
+}
